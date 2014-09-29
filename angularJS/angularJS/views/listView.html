@@ -1,0 +1,33 @@
+﻿<div>
+
+  <h1>WELCOME TO LIST-VIEW</h1>
+  <!--<div>
+        <ol ng-repeat="person in persons">
+            <a href="#/detail/{{person.id}}">{{ person.firstName }} {{ person.lastName }}</a>
+        </ol>
+    </div>-->
+
+  <table>
+    <thead>
+      <tr>
+        <th ng-repeat="column in listCtrl.columns">{{column.name |translate}}
+        </th>
+      </tr>
+    </thead>
+    <tr ng-repeat=" person in listCtrl.persons">
+      <td ng-repeat="column in listCtrl.columns" ng-click="listCtrl.editing = person">
+        <span ng-if="listCtrl.editing !== person">{{person[column.name]}}</span>
+        <input ng-if="listCtrl.editing === person" ng-model="person[column.name]" />
+      </td>
+      <td>
+        <options-dropdown
+          item-id="{{person.id}}"
+          actions="listCtrl.actions">
+        </options-dropdown>
+      </td>
+    </tr>
+  </table>
+  <a href="#/detail">
+    <button>Create new person</button>
+  </a>
+</div>

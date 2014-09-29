@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Project: AngularJS</title>
+  <link href="css/styleSheet.css" rel="stylesheet" />
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body ng-app="sibbApp">
+
+  <h1>WELCOME TO INDEX-VIEW</h1>
+
+  <div ng-view="">
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="scripts/angular.js"></script>
+  <script src="scripts/angular-route.js"></script>
+  <script src="scripts/angular-ui/ui-bootstrap-tpls.js"></script>
+  <script src="main.js"></script>
+  <script src="controllers/person_detail.js"></script>
+  <script src="controllers/person_list.js"></script>
+  <script src="directives/optionsDropdown.js"></script>
+  <script src="filters/translate_filter.js"></script>
+  <script src="services/model_service.js"></script>
+  <script src="services/person_service.js"></script>
+</body>
+</html>

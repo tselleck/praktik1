@@ -1,0 +1,56 @@
+﻿<div>
+    
+    <h1>WELCOME TO DETAIL-VIEW</h1>
+
+    <pre>{{detailCtrl.person |json}}</pre>
+    <ng-form name="personDetailForm" class="css-form" novalidate>
+        
+        <label>Firstname:</label>
+        <input type="text" name="firstName" ng-model="detailCtrl.person.firstName" ng-maxlength="40" required />
+        <span ng-show="personDetailForm.firstName.$error.required">*Required*</span>
+        <span ng-show="personDetailForm.firstName.$error.maxlength">*Too long*</span>
+        
+        <br />
+        <label>Lastname:</label>
+        <input type="text" name="lastName" ng-model="detailCtrl.person.lastName" ng-maxlength="40" required />
+        <span ng-show="personDetailForm.lastName.$error.required">*Required*</span>
+        <span ng-show="personDetailForm.lastName.$error.maxlength">*Too long*</span>
+        
+        <br />
+        <label>Age:</label>
+        <input type="text" name="age" ng-model="detailCtrl.person.age" ng-pattern="/^[1-9]?[0-9]{1}$|^200$/" required /> 
+        <span ng-show="personDetailForm.age.$error.pattern">*Not a valid age*</span>
+        <span ng-show="personDetailForm.age.$error.required">*Required*</span>
+
+        <br />
+        <label>City:</label>
+        <input type="text" name="city" ng-model="detailCtrl.person.city" ng-maxlength="40" required />
+        <span ng-show="personDetailForm.city.$error.required">*Required*</span>
+        <span ng-show="personDetailForm.city.$error.maxlength">*Too long*</span>
+        
+        <br />
+        <label>E-mail:</label>
+        <input type="email" name="email1" ng-model="detailCtrl.person.email" required  />
+        <span class="error" ng-show="personDetailForm.email1.$error.required">*Required*</span>
+        <span class="error" ng-show="personDetailForm.email1.$error.email">Please, write a valid email address.</span>
+        
+        <br />
+        <label>Phonenumber:</label>
+        <input type="text" name="phoneNumber" ng-model="detailCtrl.person.phoneNumber" ng-pattern="/^(?:\+?\d{2}[ -]?[\d -][\d -]+)$/" required/>
+        <span ng-show="personDetailForm.phoneNumber.$error.pattern">*INVALID*</span>
+        <span ng-show="personDetailForm.phoneNumber.$error.required">*Required*</span>
+        
+        <br />
+        <br />
+        <button type="button" 
+            name="update" 
+            ng-disabled="personDetailForm.$pristine"
+            ng-click="detailCtrl.save()">
+            Update
+        </button>
+
+        <a href="#/list"><button>Back</button></a>
+
+    </ng-form>
+    
+</div>

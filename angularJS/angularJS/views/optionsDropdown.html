@@ -1,0 +1,17 @@
+﻿<div class="btn-group"
+  dropdown
+  is-open="ddCtrl.status.isopen">
+  <button type="button"
+    class="btn btn-primary dropdown-toggle"
+    ng-disabled="ddCtrl.disabled">
+    Button dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li ng-repeat="action in ddCtrl.actions">
+      <a ng-click="action.exec(ddCtrl.itemId)">
+        {{action.name |translate}}
+      </a>
+    </li>
+  </ul>
+</div>
