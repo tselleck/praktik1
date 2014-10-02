@@ -61,10 +61,37 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\animations.css" />
+    <Content Include="css\app.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="img\phones\htc-0.jpg" />
+    <Content Include="img\phones\htc-1.jpg" />
+    <Content Include="img\phones\htc-2.jpg" />
+    <Content Include="img\phones\iphone-0.jpg" />
+    <Content Include="img\phones\iphone-1.jpg" />
+    <Content Include="img\phones\iphone-2.jpg" />
+    <Content Include="img\phones\motorola-0.jpg" />
+    <Content Include="img\phones\motorola-1.jpg" />
+    <Content Include="img\phones\motorola-2.jpg" />
+    <Content Include="img\phones\nokia-0.jpg" />
+    <Content Include="img\phones\nokia-1.jpg" />
+    <Content Include="img\phones\nokia-2.jpg" />
+    <Content Include="img\phones\samsung-0.jpg" />
+    <Content Include="img\phones\samsung-1.jpg" />
+    <Content Include="img\phones\samsung-2.jpg" />
     <Content Include="index.html" />
+    <Content Include="js\animations.js" />
+    <Content Include="js\app.js" />
     <Content Include="js\controllers.js" />
+    <Content Include="js\filters.js" />
+    <Content Include="js\services.js" />
+    <Content Include="phones\iphone.json" />
+    <Content Include="phones\motorola.json" />
+    <Content Include="phones\nokia.json" />
+    <Content Include="phones\htc.json" />
     <None Include="phones\phones.json" />
+    <Content Include="partials\phone-detail.html" />
+    <Content Include="partials\phone-list.html" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-cookies.js" />
@@ -819,9 +846,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <None Include="Scripts\jquery-1.9.0.intellisense.js" />
-    <Content Include="Scripts\jquery-1.9.0.js" />
-    <Content Include="Scripts\jquery-1.9.0.min.js" />
+    <Content Include="phones\samsung.json" />
+    <None Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
     <Content Include="test\unit\controllerSpec.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -840,7 +868,7 @@
     <Content Include="Scripts\angular-animate.min.js.map" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="packages.config" />
-    <Content Include="Scripts\jquery-1.9.0.min.map" />
+    <Content Include="Scripts\jquery-2.1.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
