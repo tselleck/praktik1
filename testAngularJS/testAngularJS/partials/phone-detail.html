@@ -1,0 +1,94 @@
+﻿<div class="phone-images">
+  <img ng-src="{{img}}"
+    class="phone"
+    ng-repeat="img in phone.images"
+    ng-class="{active:mainImageUrl==img}">
+</div>
+
+<h1>{{phone.name}}</h1>
+
+<p>{{phone.description}}</p>
+
+<ul class="phone-thumbs">
+  <li ng-repeat="img in phone.images">
+    <img ng-src="{{img}}" ng-mouseenter="setImage(img)">
+  </li>
+</ul>
+
+<ul class="specs">
+  <li>
+    <span>Battery</span>
+    <dl>
+      <dt>Type</dt>
+      <dd>{{phone.battery.type}}</dd>
+      <dt>Talk Time</dt>
+      <dd>{{phone.battery.talkTime}}</dd>
+      <dt>Standby time (max)</dt>
+      <dd>{{phone.battery.standbyTime}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Storage and Memory</span>
+    <dl>
+      <dt>RAM</dt>
+      <dd>{{phone.storage.ram}}</dd>
+      <dt>Internal Storage</dt>
+      <dd>{{phone.storage.flash}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Size and Weight</span>
+    <dl>
+      <dt>Dimensions</dt>
+      <dd ng-repeat="dim in phone.sizeAndWeight.dimensions">{{dim}}</dd>
+      <dt>Weight</dt>
+      <dd>{{phone.sizeAndWeight.weight}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Display</span>
+    <dl>
+      <dt>Screen size</dt>
+      <dd>{{phone.display.screenSize}}</dd>
+      <dt>Screen resolution</dt>
+      <dd>{{phone.display.screenResolution}}</dd>
+      <dt>Touch screen</dt>
+      <dd>{{phone.display.touchScreen | checkmark}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Hardware</span>
+    <dl>
+      <dt>CPU</dt>
+      <dd>{{phone.hardware.cpu}}</dd>
+      <dt>USB</dt>
+      <dd>{{phone.hardware.usb}}</dd>
+      <dt>Audio / headphone jack</dt>
+      <dd>{{phone.hardware.audioJack}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Camera</span>
+    <dl>
+      <dt>Primary</dt>
+      <dd>{{phone.camera.primary}}</dd>
+      <dt>Features</dt>
+      <dd>{{phone.camera.features}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Additional Features</span>
+    <dl>
+      <dt>Messaging</dt>
+      <dd>{{phone.additionalFeatures.messaging}}</dd>
+      <dt>Browser</dt>
+      <dd>{{phone.additionalFeatures.browser}}</dd>
+      <dt>Radio</dt>
+      <dd>{{phone.additionalFeatures.radio | checkmark}}</dd>
+      <dt>GPS</dt>
+      <dd>{{phone.additionalFeatures.gps | checkmark}}</dd>
+      <dt>Java</dt>
+      <dd>{{phone.additionalFeatures.java | checkmark}}</dd>
+    </dl>
+  </li>
+</ul>

@@ -1,0 +1,48 @@
+﻿{
+    "additionalFeatures": {
+      "messaging": "SMS (threaded view), MMS, Email, Push Email, IM.",
+      "browser": "HTML5.",
+      "radio": true,
+      "gps": true,
+      "java": false
+    },
+    "battery": {
+        "standbyTime": "Up to 360h (3G).", 
+        "talkTime": "Up to 9h 40m (3G).", 
+        "type": "Li-Ion 1430 mAh battery (BL-5J)."
+    }, 
+    "camera": {
+        "features": "1/4'' sensor size, geo-tagging.", 
+        "primary": "5 MP."
+    },
+    "description": "Always hungry. Chase imaginary bugs roll on the floor purring your whiskers off. Nap all day jump off balcony, onto stranger's head. All of a sudden cat goes crazy. I like big cats and i can not lie always hungry so flop over rub face on everything, but hack up furballs claw drapes. Chase dog then run away make muffins. Leave dead animals as gifts find something else more interesting stick butt in face missing until dinner time. Hate dog who's the baby, for sun bathe, and burrow under covers, for hide when guests come over behind the couch. Rub face on everything all of a sudden cat goes crazy, and sleep on keyboard stand in front of the computer screen, so throwup on your pillow, and destroy couch. Scamper hunt anything that moves. Rub face on everything who's the baby, so sun bathe. Hunt by meowing loudly at 5am next to human slave food dispenser sweet beast stand in front of the computer screen, for under the bed hack up furballs destroy couch. Chase dog then run away mark territory, for intently sniff hand cat snacks. Favor packaging over toy mark territory attack feet claw drapes sun bathe, but stare at ceiling. Stick butt in face sleep on keyboard rub face on everything. Under the bed kick up litter for sleep on keyboard, but rub face on everything need to chase tail.", 
+    "display": {
+        "screenResolution": "480 x 800 pixels.", 
+        "screenSize": "4.0 inches.", 
+        "touchScreen": true
+    }, 
+    "hardware": {
+        "audioJack": "3.5mm.", 
+        "cpu": "Dual-core 1 GHz.",
+        "usb": "MicroUSB v2.0."
+    }, 
+    "id": "nokia", 
+    "images": [
+        "img/phones/nokia-0.jpg",
+        "img/phones/nokia-1.jpg",
+        "img/phones/nokia-2.jpg"
+    ], 
+    "name": "Nokia Lumia 520", 
+    "sizeAndWeight": {
+        "dimensions": [
+            "64 mm (w).", 
+            "119.9 mm (h).", 
+            "9.9 mm (d)."
+        ], 
+        "weight": "124 g."
+    }, 
+    "storage": {
+        "flash": "8 GB.", 
+        "ram": "512 MB RAM."
+    }
+}

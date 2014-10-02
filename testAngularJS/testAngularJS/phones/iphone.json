@@ -1,0 +1,48 @@
+﻿{
+    "additionalFeatures": {
+      "messaging": "iMessage, SMS (threaded view), MMS, Email, Push Email.",
+      "browser": "HTML5 (Safari).",
+      "radio": false,
+      "gps": true,
+      "java": false
+    },
+    "battery": {
+        "standbyTime": "Up to 250h (2G) / Up to 250h (3G).", 
+        "talkTime": "Up to 10h (2G) / Up to 10h (3G).", 
+        "type": "Non-removable Li-Po 1560 mAh battery (5.92 Wh)."
+    }, 
+    "camera": {
+        "features": "1/3'' sensor size, 1.5 µm pixel size, simultaneous HD video and image recording, touch focus, geo-tagging, face/smile detection, HDR (photo/panorama).", 
+        "primary": "5.0 megapixels"
+    },
+    "description": "Leave hair everywhere present belly, scratch hand when stroked but nap all day hide when guests come over. Chase dog then run away. Present belly, scratch hand when stroked leave fur on owners clothes and burrow under covers present belly, scratch hand when stroked yet plan steps for world domination throwup on your pillow hopped up on catnip. Lick arm hair sun bathe bathe private parts with tongue then lick owner's face chase dog then run away or chase imaginary bugs, so kick up litter and inspect anything brought into the house. Play time have secret plans yet peer out window, chatter at birds, lure them to mouth for chase dog then run away for leave fur on owners clothes. Sit in box. Kick up litter leave hair everywhere purr while eating so play time, and favor packaging over toy throwup on your pillow. Sleep in the bathroom sink. Under the bed curl into a furry donut stretch, for sweet beast stand in front of the computer screen. Cat snacks have secret plans leave fur on owners clothes, present belly, scratch hand when stroked have secret plans.", 
+    "display": {
+        "screenResolution": "640 x 1136 pixels.", 
+        "screenSize": "4.0 inches (~326 ppi pixel density).", 
+        "touchScreen": true
+    }, 
+    "hardware": {
+        "audioJack": "3.5mm", 
+        "cpu": "Dual-core 1.3 GHz Cyclone (ARM v8-based).",
+        "usb": "v2.0."
+    }, 
+    "id": "iphone", 
+    "images": [
+        "img/phones/iphone-0.jpg",
+        "img/phones/iphone-1.jpg",
+        "img/phones/iphone-2.jpg"
+    ], 
+    "name": "iPhone 5s", 
+    "sizeAndWeight": {
+        "dimensions": [
+            "58.6 mm (w).", 
+            "123.8 mm (h).", 
+            "7.6 mm (d)."
+        ], 
+        "weight": "112 g."
+    }, 
+    "storage": {
+        "flash": "16/32/64 GB.", 
+        "ram": "1 GB RAM DDR3."
+    }
+}

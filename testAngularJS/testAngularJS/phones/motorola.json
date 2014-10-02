@@ -1,0 +1,48 @@
+﻿{
+    "additionalFeatures": {
+      "messaging": "SMS(threaded view), MMS, Email, Push Email, IM.",
+      "browser": "HTML5.",
+      "radio": true,
+      "gps": true,
+      "java": true
+    },
+    "battery": {
+        "standbyTime": "Up to 350h.", 
+        "talkTime": "Up to 24h.", 
+        "type": "Non-removable Li-Ion 2070 mAh battery."
+    }, 
+    "camera": {
+        "features": "Geo-tagging, touch focus, face detection, HDR, panorama.", 
+        "primary": "5.0 megapixels"
+    },
+    "description": "Peer out window, chatter at birds, lure them to mouth. Chew foot missing until dinner time, for throwup on your pillow, yet find something else more interesting. Hunt anything that moves intently stare at the same spot, but sit in box yet hate dog, but intently stare at the same spot. Make muffins favor packaging over toy stare at ceiling hide when guests come over, or make muffins. Hate dog mark territory chase dog then run away. Eat grass, throw it back up chase mice have secret plans.", 
+    "display": {
+        "screenResolution": "720 x 1280 pixels.", 
+        "screenSize": "4.5 inches (~326 ppi pixel density).", 
+        "touchScreen": true
+    }, 
+    "hardware": {
+        "audioJack": "3.5mm", 
+        "cpu": "Quad-core 1.2 GHz Cortex-A7.",
+        "usb": "MicroUSB v2.0, USB Host."
+    }, 
+    "id": "iphone", 
+    "images": [
+        "img/phones/motorola-0.jpg",
+        "img/phones/motorola-1.jpg",
+        "img/phones/motorola-2.jpg"
+    ], 
+    "name": "Motorola Moto G", 
+    "sizeAndWeight": {
+        "dimensions": [
+            "65.9 mm (w).", 
+            "129.9 mm (h).", 
+            "11.6 mm (d)."
+        ], 
+        "weight": "143 g."
+    }, 
+    "storage": {
+        "flash": "8/16 GB.", 
+        "ram": "1 GB RAM."
+    }
+}

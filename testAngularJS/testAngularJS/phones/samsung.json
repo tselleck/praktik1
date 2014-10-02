@@ -1,0 +1,48 @@
+﻿{
+    "additionalFeatures": {
+      "messaging": "SMS(threaded view), MMS, Email, Push Mail, IM.",
+      "browser": "HTML5.",
+      "radio": false,
+      "gps": true,
+      "java": true
+    },
+    "battery": {
+        "standbyTime": "Up to 390 h.", 
+        "talkTime": "Up to 21 h.", 
+        "type": "Li-Ion 2800 mAh battery."
+    }, 
+    "camera": {
+        "features": "1/2.6'' sensor size, 1.12 µm pixel size, Dual Shot, Simultaneous HD video and image recording, geo-tagging, touch focus, face/smile detection, HDR.", 
+        "primary": "16.0 megapixels"
+    },
+    "description": "Hide when guests come over burrow under covers, for behind the couch swat at dog, or kick up litter. Leave hair everywhere intrigued by the shower, for chase mice burrow under covers, for chase mice. Leave fur on owners clothes chase dog then run away yet bathe private parts with tongue then lick owner's face but sleep in the bathroom sink. Hide when guests come over throwup on your pillow sleep nap for scamper yet leave hair everywhere. Run in circles plan steps for world domination. Sweet beast. Hide when guests come over peer out window, chatter at birds, lure them to mouth for leave hair everywhere sleep on keyboard, and purr while eating spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce but intently sniff hand. Stand in front of the computer screen swat at dog missing until dinner time. Cat snacks jump off balcony, onto stranger's head. Chew iPad power cord make muffins missing until dinner time, and all of a sudden cat goes crazy shake treat bag, so under the bed, for bathe private parts with tongue then lick owner's face. Sleep nap spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce but stick butt in face destroy couch. Stand in front of the computer screen hack up furballs so leave fur on owners clothes. Chase mice. Always hungry nap all day, so under the bed, and leave dead animals as gifts chase dog then run away and peer out window, chatter at birds, lure them to mouth.", 
+    "display": {
+        "screenResolution": "1080 x 1920 pixels.", 
+        "screenSize": "5.1 inches (~432 ppi pixel density).", 
+        "touchScreen": true
+    }, 
+    "hardware": {
+        "audioJack": "3.5mm", 
+        "cpu": "Quad-core 2.5 GHz Krait 400.",
+        "usb": "microUSB v3.0 (MHL 2.1), USB On-the-go, USB Host."
+    }, 
+    "id": "samsung", 
+    "images": [
+        "img/phones/samsung-0.jpg",
+        "img/phones/samsung-1.jpg",
+        "img/phones/samsung-2.jpg"
+    ], 
+    "name": "Samsung Galaxy S5", 
+    "sizeAndWeight": {
+        "dimensions": [
+            "72.5 mm (w).", 
+            "142 mm (h).", 
+            "8.1 mm (d)."
+        ], 
+        "weight": "143 g."
+    }, 
+    "storage": {
+        "flash": "16/32 GB.", 
+        "ram": "2 GB RAM."
+    }
+}
