@@ -1,0 +1,32 @@
+﻿img.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainView {
+  color: black;
+}
+
+body {
+  color: black;
+  background-color: #464646;
+}
+
+.single-item {
+  float: left;
+  width: 5%;
+}
+
+.single-item img {
+  width: 100%;
+}
+
+.single-hero {
+  float: left;
+  width: 5%;
+}
+
+.single-hero img {
+  width: 100%;
+}

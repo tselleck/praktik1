@@ -1,0 +1,12 @@
+﻿<div class="matchesView">
+  <h3>Matches</h3>
+  <img src="img/matches_logo.png" />
+
+  <ul>
+    <li ng-repeat="match in matches">
+      {{ match }}
+    </li>
+  </ul>
+
+  <pre>{{ matches | json }}</pre>
+</div>

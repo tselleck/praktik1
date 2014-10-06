@@ -1,0 +1,767 @@
+{
+  "heroes": [
+    {
+      "name": "antimage",
+      "id": 1,
+      "localized_name": "Anti-Mage",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/antimage_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "axe",
+      "id": 2,
+      "localized_name": "Axe",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/axe_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "bane",
+      "id": 3,
+      "localized_name": "Bane",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/bane_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "bloodseeker",
+      "id": 4,
+      "localized_name": "Bloodseeker",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/bloodseeker_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "crystal_maiden",
+      "id": 5,
+      "localized_name": "Crystal Maiden",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/crystal_maiden_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "drow_ranger",
+      "id": 6,
+      "localized_name": "Drow Ranger",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/drow_ranger_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "earthshaker",
+      "id": 7,
+      "localized_name": "Earthshaker",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/earthshaker_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "juggernaut",
+      "id": 8,
+      "localized_name": "Juggernaut",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/juggernaut_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "mirana",
+      "id": 9,
+      "localized_name": "Mirana",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/mirana_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "nevermore",
+      "id": 11,
+      "localized_name": "Shadow Fiend",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/nevermore_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "morphling",
+      "id": 10,
+      "localized_name": "Morphling",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/morphling_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "phantom_lancer",
+      "id": 12,
+      "localized_name": "Phantom Lancer",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/phantom_lancer_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "puck",
+      "id": 13,
+      "localized_name": "Puck",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/puck_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "pudge",
+      "id": 14,
+      "localized_name": "Pudge",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/pudge_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "razor",
+      "id": 15,
+      "localized_name": "Razor",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/razor_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "sand_king",
+      "id": 16,
+      "localized_name": "Sand King",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/sand_king_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "storm_spirit",
+      "id": 17,
+      "localized_name": "Storm Spirit",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/storm_spirit_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "sven",
+      "id": 18,
+      "localized_name": "Sven",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/sven_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "tiny",
+      "id": 19,
+      "localized_name": "Tiny",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/tiny_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "vengefulspirit",
+      "id": 20,
+      "localized_name": "Vengeful Spirit",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/vengefulspirit_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "windrunner",
+      "id": 21,
+      "localized_name": "Windranger",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/windrunner_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "zuus",
+      "id": 22,
+      "localized_name": "Zeus",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/zuus_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "kunkka",
+      "id": 23,
+      "localized_name": "Kunkka",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/kunkka_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "lina",
+      "id": 25,
+      "localized_name": "Lina",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/lina_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "lich",
+      "id": 31,
+      "localized_name": "Lich",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/lich_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "lion",
+      "id": 26,
+      "localized_name": "Lion",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/lion_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "shadow_shaman",
+      "id": 27,
+      "localized_name": "Shadow Shaman",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/shadow_shaman_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "slardar",
+      "id": 28,
+      "localized_name": "Slardar",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/slardar_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "tidehunter",
+      "id": 29,
+      "localized_name": "Tidehunter",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/tidehunter_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "witch_doctor",
+      "id": 30,
+      "localized_name": "Witch Doctor",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/witch_doctor_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "riki",
+      "id": 32,
+      "localized_name": "Riki",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/riki_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "enigma",
+      "id": 33,
+      "localized_name": "Enigma",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/enigma_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "tinker",
+      "id": 34,
+      "localized_name": "Tinker",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/tinker_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "sniper",
+      "id": 35,
+      "localized_name": "Sniper",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/sniper_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "necrolyte",
+      "id": 36,
+      "localized_name": "Necrophos",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/necrolyte_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "warlock",
+      "id": 37,
+      "localized_name": "Warlock",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/warlock_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "beastmaster",
+      "id": 38,
+      "localized_name": "Beastmaster",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/beastmaster_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "queenofpain",
+      "id": 39,
+      "localized_name": "Queen of Pain",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/queenofpain_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "venomancer",
+      "id": 40,
+      "localized_name": "Venomancer",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/venomancer_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "faceless_void",
+      "id": 41,
+      "localized_name": "Faceless Void",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/faceless_void_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "skeleton_king",
+      "id": 42,
+      "localized_name": "Skeleton King",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/skeleton_king_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "death_prophet",
+      "id": 43,
+      "localized_name": "Death Prophet",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/death_prophet_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "phantom_assassin",
+      "id": 44,
+      "localized_name": "Phantom Assassin",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/phantom_assassin_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "pugna",
+      "id": 45,
+      "localized_name": "Pugna",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/pugna_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "templar_assassin",
+      "id": 46,
+      "localized_name": "Templar Assassin",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/templar_assassin_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "viper",
+      "id": 47,
+      "localized_name": "Viper",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/viper_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "luna",
+      "id": 48,
+      "localized_name": "Luna",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/luna_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "dragon_knight",
+      "id": 49,
+      "localized_name": "Dragon Knight",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/dragon_knight_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "dazzle",
+      "id": 50,
+      "localized_name": "Dazzle",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/dazzle_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "rattletrap",
+      "id": 51,
+      "localized_name": "Clockwerk",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/rattletrap_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "leshrac",
+      "id": 52,
+      "localized_name": "Leshrac",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/leshrac_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "furion",
+      "id": 53,
+      "localized_name": "Nature's Prophet",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/furion_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "life_stealer",
+      "id": 54,
+      "localized_name": "Lifestealer",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/life_stealer_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "dark_seer",
+      "id": 55,
+      "localized_name": "Dark Seer",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/dark_seer_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "clinkz",
+      "id": 56,
+      "localized_name": "Clinkz",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/clinkz_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "omniknight",
+      "id": 57,
+      "localized_name": "Omniknight",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/omniknight_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "enchantress",
+      "id": 58,
+      "localized_name": "Enchantress",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/enchantress_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "huskar",
+      "id": 59,
+      "localized_name": "Huskar",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/huskar_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "night_stalker",
+      "id": 60,
+      "localized_name": "Night Stalker",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/night_stalker_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "broodmother",
+      "id": 61,
+      "localized_name": "Broodmother",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/broodmother_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "bounty_hunter",
+      "id": 62,
+      "localized_name": "Bounty Hunter",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/bounty_hunter_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "weaver",
+      "id": 63,
+      "localized_name": "Weaver",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/weaver_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "jakiro",
+      "id": 64,
+      "localized_name": "Jakiro",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/jakiro_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "batrider",
+      "id": 65,
+      "localized_name": "Batrider",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/batrider_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "chen",
+      "id": 66,
+      "localized_name": "Chen",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/chen_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "spectre",
+      "id": 67,
+      "localized_name": "Spectre",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/spectre_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "doom_bringer",
+      "id": 69,
+      "localized_name": "Doom",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/doom_bringer_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "ancient_apparition",
+      "id": 68,
+      "localized_name": "Ancient Apparition",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/ancient_apparition_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "ursa",
+      "id": 70,
+      "localized_name": "Ursa",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/ursa_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "spirit_breaker",
+      "id": 71,
+      "localized_name": "Spirit Breaker",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/spirit_breaker_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "gyrocopter",
+      "id": 72,
+      "localized_name": "Gyrocopter",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/gyrocopter_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "alchemist",
+      "id": 73,
+      "localized_name": "Alchemist",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/alchemist_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "invoker",
+      "id": 74,
+      "localized_name": "Invoker",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/invoker_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "silencer",
+      "id": 75,
+      "localized_name": "Silencer",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/silencer_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "obsidian_destroyer",
+      "id": 76,
+      "localized_name": "Outworld Devourer",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/obsidian_destroyer_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "lycan",
+      "id": 77,
+      "localized_name": "Lycanthrope",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/lycan_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "brewmaster",
+      "id": 78,
+      "localized_name": "Brewmaster",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/brewmaster_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "shadow_demon",
+      "id": 79,
+      "localized_name": "Shadow Demon",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/shadow_demon_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "lone_druid",
+      "id": 80,
+      "localized_name": "Lone Druid",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/lone_druid_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "chaos_knight",
+      "id": 81,
+      "localized_name": "Chaos Knight",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/chaos_knight_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "meepo",
+      "id": 82,
+      "localized_name": "Meepo",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/meepo_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "treant",
+      "id": 83,
+      "localized_name": "Treant Protector",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/treant_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "ogre_magi",
+      "id": 84,
+      "localized_name": "Ogre Magi",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/ogre_magi_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "undying",
+      "id": 85,
+      "localized_name": "Undying",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/undying_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "rubick",
+      "id": 86,
+      "localized_name": "Rubick",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/rubick_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "disruptor",
+      "id": 87,
+      "localized_name": "Disruptor",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/disruptor_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "nyx_assassin",
+      "id": 88,
+      "localized_name": "Nyx Assassin",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/nyx_assassin_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "naga_siren",
+      "id": 89,
+      "localized_name": "Naga Siren",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/naga_siren_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "keeper_of_the_light",
+      "id": 90,
+      "localized_name": "Keeper of the Light",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/keeper_of_the_light_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "wisp",
+      "id": 91,
+      "localized_name": "Wisp",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/wisp_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "visage",
+      "id": 92,
+      "localized_name": "Visage",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/visage_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "slark",
+      "id": 93,
+      "localized_name": "Slark",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/slark_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "medusa",
+      "id": 94,
+      "localized_name": "Medusa",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/medusa_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "troll_warlord",
+      "id": 95,
+      "localized_name": "Troll Warlord",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/troll_warlord_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "centaur",
+      "id": 96,
+      "localized_name": "Centaur Warrunner",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/centaur_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "magnataur",
+      "id": 97,
+      "localized_name": "Magnus",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/magnataur_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "shredder",
+      "id": 98,
+      "localized_name": "Timbersaw",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/shredder_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "bristleback",
+      "id": 99,
+      "localized_name": "Bristleback",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/bristleback_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "tusk",
+      "id": 100,
+      "localized_name": "Tusk",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/tusk_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "skywrath_mage",
+      "id": 101,
+      "localized_name": "Skywrath Mage",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/skywrath_mage_hphover.png",
+      "main_attribute": "intelligence"
+    },
+    {
+      "name": "abaddon",
+      "id": 102,
+      "localized_name": "Abaddon",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/abaddon_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "elder_titan",
+      "id": 103,
+      "localized_name": "Elder Titan",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/elder_titan_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "legion_commander",
+      "id": 104,
+      "localized_name": "Legion Commander",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/legion_commander_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "ember_spirit",
+      "id": 106,
+      "localized_name": "Ember Spirit",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/ember_spirit_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "earth_spirit",
+      "id": 107,
+      "localized_name": "Earth Spirit",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/earth_spirit_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "abyssal_underlord",
+      "id": 108,
+      "localized_name": "Abyssal Underlord",
+      "image": "",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "terrorblade",
+      "id": 109,
+      "localized_name": "Terrorblade",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/terrorblade_hphover.png",
+      "main_attribute": "agility"
+    },
+    {
+      "name": "phoenix",
+      "id": 110,
+      "localized_name": "Phoenix",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/phoenix_hphover.png",
+      "main_attribute": "strength"
+    },
+    {
+      "name": "techies",
+      "id": 105,
+      "localized_name": "Techies",
+      "image": "http://cdn.dota2.com/apps/dota2/images/heroes/techies_hphover.png",
+      "main_attribute": "intelligence"
+    }
+  ]
+}

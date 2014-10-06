@@ -1,0 +1,9 @@
+﻿<div class="itemsView">
+  <h3>Items</h3>
+
+  <div>
+    <div class="single-item" ng-repeat="item in items" ng-if="item.image">
+      <img ng-src="{{item.image}}" title="{{ item.name }}" />
+    </div>
+  </div>
+</div>

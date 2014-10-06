@@ -1,0 +1,12 @@
+﻿<div class="heroesView">
+  <h3>Heroes</h3>
+
+
+
+  <div>
+    <div class="single-hero" ng-repeat="hero in heroes" ng-if="hero.image">
+      <img ng-src="{{hero.image}}" title="{{ hero.name }}" ng-click="goToHeroDetail(hero)"/>
+    </div>
+  </div>
+
+</div>
