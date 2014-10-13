@@ -5,55 +5,56 @@
 
   var dotaControllers = angular.module('dotaControllers', []);
 
-  dotaControllers.controller('heroesCtrl', ['$scope', '$http', '$location', function ($scope, $http, $location) {
+  // Heroes-view controller
+  dotaControllers.controller('HeroesCtrl', ['$scope', '$http', '$location', function ($scope, $http, $location) {
+
+    var heroesCtrl = this;
+
     $http.get('data/heroes.json').then(function (result) {
-      $scope.heroes = result.data.heroes;
+      heroesCtrl.heroes = result.data;
+
+      heroesCtrl.strengthHeroes = _.filter(heroesCtrl.heroes, { 'main_attribute': 'strength' });
+      heroesCtrl.agilityHeroes = _.filter(heroesCtrl.heroes, { 'main_attribute': 'agility' });
+      heroesCtrl.intelligenceHeroes = _.filter(heroesCtrl.heroes, { 'main_attribute': 'intelligence' });
     });
-    $scope.goToHeroDetail = function (hero) {
+
+    heroesCtrl.showPreview = function (hero) {
+      heroesCtrl.previewHero = heroesCtrl.heroes[hero.name];
+    };
+
+    heroesCtrl.goToHeroDetail = function (hero) {
       $location.path('heroes/' + hero.name);
     };
+
   }]);
 
-  dotaControllers.controller('matchesCtrl', ['$scope', '$http', function ($scope, $http) {
+  //Hero-detail-view controller
+  dotaControllers.controller('HeroDetailCtrl', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
+
+    var heroDetailCtrl = this;
+    var heroName = $routeParams.heroName;
+
+    $http.get('data/heroes.json').then(function (result) {
+      heroDetailCtrl.hero = result.data[heroName];
+    });
+  }]);
+
+  // Match-view controller
+  dotaControllers.controller('HatchesCtrl', ['$scope', '$http', function ($scope, $http) {
     $http.get('https://api.steampowered.com/IDOTA2Match_570/GetMatchHistory/V1?key=9F5ED90795E74A50AEE916A820A488F2').then(function (result) {
       $scope.matches = result.data.result.matches;
     });
   }]);
 
-  dotaControllers.controller('mainCtrl', ['$scope', '$http', function ($scope, $http) {
+  // Main-view controller
+  dotaControllers.controller('HainCtrl', ['$scope', '$http', function ($scope, $http) {
 
   }]);
 
-  dotaControllers.controller('itemsCtrl', ['$scope', '$http', function ($scope, $http) {
+  //Items-view controller
+  dotaControllers.controller('ItemsCtrl', ['$scope', '$http', function ($scope, $http) {
     $http.get('data/items.json').then(function (result) {
       $scope.items = result.data.items;
     });
-  }]);
-
-  dotaControllers.controller('heroDetailCtrl', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
-    var heroName = $routeParams.heroName;
-
-    var getHeroImage = function () {
-      return $http.get('data/heroes.json').then(function (result) {
-        var filtered = result.data.heroes.filter(function (hero) {
-          return hero.name === heroName;
-        });
-        return filtered[0].image;
-      });
-    };
-
-    var getHeroDetails = function () {
-      return $http.get('data/heroes_details.json').then(function (result) {
-        $scope.hero = result.data[heroName];
-        return $scope.hero;
-      });
-    };
-
-    getHeroDetails()
-      .then(getHeroImage)
-      .then(function (image) {
-        $scope.hero.image = image;
-      });
-
   }]);
 })();

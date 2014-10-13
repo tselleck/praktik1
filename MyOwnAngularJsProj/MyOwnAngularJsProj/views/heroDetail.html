@@ -1,6 +1,54 @@
-﻿<div>
-
-  <h1>WELCOME TO HERODETAIL</h1>
-  <img ng-src="{{hero.image}}" ng-if="hero.image"/>
-  <p>{{hero.bio}}</p>
+﻿<div class="heroesView row" ng-controller="HeroDetailCtrl as heroDetailCtrl">
+  <div class="hero-intro">
+    <h4>NAME:</h4>
+    <h2>{{ heroDetailCtrl.hero.localized_name }}</h2>
+    <img ng-src="{{heroDetailCtrl.hero.image}}" ng-if="heroDetailCtrl.hero.image" />
+  </div>
+  <h4>OVERVIEW:</h4>
+  <div class="overview row">
+    <div class="hero-overview">
+      <div class="hero-overview-picture">
+        <img ng-src="http://cdn.dota2.com/apps/dota2/images/heroes/{{heroDetailCtrl.hero.name}}_vert.jpg" />
+      </div>
+      <div class="primary-stats">
+        <div class="primary-stat-int">
+          <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_int.png" />
+        </div>
+        <div class="primary-stat-agi">
+          <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_agi.png" />
+        </div>
+        <div class="primary-stat-str">
+          <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_str.png" />
+        </div>
+        <div class="primary-stat-attack">
+          <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_attack.png" />
+        </div>
+        <div class="primary-stat-speed">
+          <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_speed.png" />
+        </div>
+        <div class="primary-stat-defense">
+          <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_defense.png" />
+        </div>
+      </div>
+    </div>
+    <div ng-repeat="ability in heroDetailCtrl.hero.abilities">
+      <img ng-src="http://cdn.dota2.com/apps/dota2/images/abilities/{{heroDetailCtrl.hero.name}}_{{ability.dname.toLowerCase().replace(' ', '_').replace('\'', '')}}_hp1.png" />
+      <b><u>{{ ability.dname }}:</u></b>
+      {{ ability.desc }}
+    </div>
+  </div>
+  <div>
+    <h4>BIO:</h4>
+    {{ heroDetailCtrl.hero.bio }}
+  </div>
+  <div>
+    <h4>STATS:</h4>
+    {{ heroDetailCtrl.hero }}
+  </div>
+  <div>
+    <h4>ABILITIES:</h4>
+    {{ heroDetailCtrl.hero }}
+  </div>
 </div>
+
+

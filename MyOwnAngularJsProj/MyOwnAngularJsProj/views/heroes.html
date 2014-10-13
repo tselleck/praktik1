@@ -1,11 +1,54 @@
-﻿<div class="heroesView">
-  <h3>Heroes</h3>
-
-
+﻿<div class="heroesView row" ng-controller="HeroesCtrl as heroesCtrl">
+  <div class="jumbotron">
+    <h2 ng-if="heroesCtrl.previewHero">{{ heroesCtrl.previewHero.localized_name.toUpperCase() }}</h2>
+    <h2 ng-if="!heroesCtrl.previewHero">CHOOSE A HERO</h2>
+    <div class="hero-header-border"></div>
+    <h4>{{ heroesCtrl.previewHero.atk_l }}
+      <h5 ng-repeat="role in heroesCtrl.previewHero.roles_l"> - {{ role }}</h5>
+    </h4>
+    <h4 ng-if="!heroesCtrl.previewHero">Combat style
+      <h5 ng-if="!heroesCtrl.previewHero">- Roles</h5>
+    </h4>
+  </div>
 
   <div>
-    <div class="single-hero" ng-repeat="hero in heroes" ng-if="hero.image">
-      <img ng-src="{{hero.image}}" title="{{ hero.name }}" ng-click="goToHeroDetail(hero)"/>
+    <div class="container col-md-4">
+      <div class="heroes-box">
+        <div>
+          <h3>
+            <img src="img/main_attribute_logo/strength_logo.png" />
+            STRENGTH:</h3>
+        </div>
+        <div class="single-hero" ng-repeat="(name, hero) in heroesCtrl.strengthHeroes">
+          <img ng-src="{{ hero.image }}" ng-click="heroesCtrl.goToHeroDetail(hero)" ng-mouseover="heroesCtrl.showPreview(hero)" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container col-md-4">
+      <div class="heroes-box">
+        <div>
+          <h3>
+            <img src="img/main_attribute_logo/agility_logo.png" />
+            AGILITY:</h3>
+        </div>
+        <div class="single-hero" ng-repeat="(name, hero) in heroesCtrl.agilityHeroes">
+          <img ng-src="{{ hero.image }}" ng-click="heroesCtrl.goToHeroDetail(hero)" ng-mouseover="heroesCtrl.showPreview(hero)" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container col-md-4">
+      <div class="heroes-box">
+        <div>
+          <h3>
+            <img src="img/main_attribute_logo/intelligence_logo.png" />
+            INTELLIGENCE:</h3>
+        </div>
+        <div class="single-hero" ng-repeat="(name, hero) in heroesCtrl.intelligenceHeroes">
+          <img ng-src="{{ hero.image }}" ng-click="heroesCtrl.goToHeroDetail(hero)" ng-mouseover="heroesCtrl.showPreview(hero)" />
+        </div>
+      </div>
     </div>
   </div>
 

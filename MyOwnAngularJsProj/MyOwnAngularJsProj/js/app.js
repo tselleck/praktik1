@@ -12,8 +12,7 @@
     function ($routeProvider) {
       $routeProvider.
         when('/heroes', {
-          templateUrl: 'views/heroes.html',
-          controller: 'heroesCtrl'
+          templateUrl: 'views/heroes.html'
         }).
         when('/matches', {
           templateUrl: 'views/matches.html',
@@ -28,8 +27,7 @@
           controller: 'itemsCtrl'
         }).
         when('/heroes/:heroName', {
-          templateUrl: 'views/heroDetail.html',
-          controller: 'heroDetailCtrl'
+          templateUrl: 'views/heroDetail.html'
         }).
         otherwise({
           redirectTo: '/main'

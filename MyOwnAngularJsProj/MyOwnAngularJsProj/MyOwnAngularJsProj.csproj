@@ -62,13 +62,15 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="css\dotaStyle.css" />
-    <Content Include="data\heroes_detail.json" />
+    <Content Include="data\heroes_details.json" />
     <None Include="data\items.json" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="img\dota2_logo.png" />
-    <Content Include="img\heroes_logo.png" />
-    <Content Include="img\items_logo.png" />
+    <Content Include="img\dota_background.jpg" />
     <Content Include="img\Logo_Dota_2.png" />
+    <Content Include="img\main_attribute_logo\agility_logo.png" />
+    <Content Include="img\main_attribute_logo\intelligence_logo.png" />
+    <Content Include="img\main_attribute_logo\strength_logo.png" />
     <Content Include="img\main_logo.png" />
     <Content Include="img\matches_logo.png" />
     <Content Include="index.html" />
@@ -863,6 +865,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
