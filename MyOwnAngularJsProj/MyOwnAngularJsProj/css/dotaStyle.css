@@ -14,8 +14,8 @@ img.logo {
 
 body {
   color: #EDD8B9;
-  background-color: #312728; 
-  background: url(../img/dota_background.jpg) no-repeat center center fixed; 
+  background-color: #312728;
+  background: url(../img/dota_background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -146,4 +146,85 @@ body {
   position: absolute;
   width: 100%;
   left: 38%;
+}
+
+/*HERO-DETAIL-VIEW*/
+.hero-intro {
+  text-align: center;
+}
+
+.inset-shadow {
+  box-shadow: 0 0 31px 7px #000 inset;
+}
+
+.box-header {
+  padding: 20px;
+  border-radius: 9px 9px 0 0;
+  background: #4f4f4f; /* Old browsers */
+  background: -moz-linear-gradient(top, #4f4f4f 0%, #000000 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4f4f4f), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #4f4f4f 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #4f4f4f 0%,#000000 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #4f4f4f 0%,#000000 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #4f4f4f 0%,#000000 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f4f4f', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+  .box-header h4 {
+    font-size: 4em;
+    margin: 0 auto;
+    text-shadow: 0 0 30px salmon;
+  }
+
+.overview {
+  border-radius: 0 0 9px 9px;
+  background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUlUmjY_cOquq8MvkgOAViKSQGofTimxOFYjACMy-A3HDmUyff);
+}
+.apad {
+  padding: 25px;
+}
+.transparent{
+  overflow: auto;
+  background:rgba(5,5,5,0.8);
+}
+
+.overview-bio {
+  border: 5px solid #110D0E;
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.overview-abilities {
+}
+
+.overview-abilities-row {
+  height: auto;
+  width: 650px;
+  margin-bottom: 30px;
+}
+
+.overview-abilities-img {
+  border: solid 2px black;
+  box-shadow: 0px 0px 4px 4px #0e0e0e;
+  padding: 0px;
+}
+
+.overview-abilities-img img {
+  width: 100%;
+}
+
+.overview-abilities-description h2 {
+  font-family: KoreanFont,georgia,serif;
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2px;
+}
+
+.overview-abilities-description p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 21px;
 }
