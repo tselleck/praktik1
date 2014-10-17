@@ -29,7 +29,7 @@
   }]);
 
   //Hero-detail-view controller
-  dotaControllers.controller('HeroDetailCtrl', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
+  dotaControllers.controller('HeroDetailCtrl', ['$scope', '$http', '$routeParams', '$compile', 'util', function ($scope, $http, $routeParams, $compile, util) {
 
     var heroDetailCtrl = this;
     var heroName = $routeParams.heroName;
@@ -194,6 +194,64 @@
       return null;
     }
 
+    heroDetailCtrl.getTooltipContent = function (ability) {
+      var dmgType = util.getVal('affects.DAMAGE TYPE.val', ability);
+      var attribVal = util.getVal('attrib.MANA BURNED PER HIT.val', ability);
+
+
+      return '<div class="tooltip-view row">' +
+          '<div class="col-md-12">' +
+            '<h1 class="ability-name row">' + ability.dname + '</h1>' +
+            '<div class="border row">' + '</div>' +
+            '<div class="ability-value row"><b>ABILITY: ' + ability.affects.ABILITY.val + '</b></div>' +
+
+            (dmgType ? '<div class="dmg-type-value row"><b>DAMAGE TYPE: ' + dmgType + '</b></div>' : '') +
+
+            '<div class="border row">' + '</div>' +
+            '<div class="desc row">' + ability.desc + '</div>' +
+            '<div class="notes row">' + ability.notes + '</div>' +
+
+            '<div class="row">' +
+              '<div class="attribute-value">' +
+                  (function () {
+                    var result = '';
+                    var attrib = ability.attrib;
+                    _.forEach(attrib, function (obj, key) {
+                      result += '<div class="key">' + key +  ': ' + '</div>' + '<div class="val>' + obj.val + '</div>';
+                    });
+                    return result;
+                  })() +
+              '</div>' +
+            '</div>' +
+
+            '<div class="row">' +
+              (function () {
+                if (ability.cmb.COOLDOWN === '') {
+                  return '';
+                } else {
+                  return '<div class="ability-cooldown col-md-4"><img src="http://cdn.dota2.com/apps/dota2/images/tooltips/cooldown.png"/>' + ability.cmb.COOLDOWN + '</div>';
+                }
+              })() +
+
+              (function () {
+                if (ability.cmb['MANA COST'] === '') {
+                  return '';
+                } else {
+                  return '<div class="ability-manacost col-md-8"><img src="http://cdn.dota2.com/apps/dota2/images/tooltips/mana.png" />' + ability.cmb['MANA COST'] + '</div>';
+                }
+              })() +
+            '</div>' +
+
+            '<div class="row">' +
+              '<div class="col-md-12">' + 
+                '<div class="lore">' + ability.lore + '</div>' +
+              '</div>' +
+            '</div>' +
+
+          '</div>' +
+        '</div>';
+
+    }
 
     heroDetailCtrl.getFormatedImageUrl = function (hero, ability) {
       var baseUrl = 'http://cdn.dota2.com/apps/dota2/images/abilities/';
@@ -212,14 +270,15 @@
   }]);
 
   // Match-view controller
-  dotaControllers.controller('HatchesCtrl', ['$scope', '$http', function ($scope, $http) {
+  dotaControllers.controller('MatchesCtrl', ['$scope', '$http', function ($scope, $http) {
+    var matchesCtrl = this;
     $http.get('https://api.steampowered.com/IDOTA2Match_570/GetMatchHistory/V1?key=9F5ED90795E74A50AEE916A820A488F2').then(function (result) {
-      $scope.matches = result.data.result.matches;
+      matchesCtrl.matches = result.data.result.matches;
     });
   }]);
 
   // Main-view controller
-  dotaControllers.controller('HainCtrl', ['$scope', '$http', function ($scope, $http) {
+  dotaControllers.controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
 
   }]);
 
@@ -229,4 +288,103 @@
       $scope.items = result.data.items;
     });
   }]);
+
+  dotaControllers.service("util", [
+      function () {
+        // EXPOSED variables:
+        var isNothing = function (a) {
+          /// Check whether the supplied argument is undefined OR null.
+          /// This is different from checking `!arg`, since that would
+          /// rule out other falsy values, such as 0, "", etc.
+          return a === void 0 || a === null;
+        };
+        var isSomething = function (a) {
+          /// Check whether the supplied argument is NOT nothing,
+          /// i.e. not undefined AND not null.
+          return !isNothing(a);
+        };
+        var areSomething = function (propArray, inObj) {
+          /// Takes an array of property names and checks
+          /// that the object passed in as second argument
+          /// has something (according to isSomething) set as value
+          /// @param 1: Array<String>, the property names
+          /// @param 2: Object, the object that should have values in the
+          ///   properties defined in @param 1.
+          /// @returns Boolean,
+          ///   true if all properties has some value
+          ///   false if any of them is nothing
+          /// @example
+          /// var t = {a: 0, b: 1, c: void 0};
+          /// var b = areSomething(["a", "b"], t); // b === true
+          /// var b = areSomething(["a", "b", "c"], t); // b === false
+          return propArray.map(function (p) {
+            // extract the values that corresponds to the
+            // property names in the array.
+            return inObj[p];
+          }).reduce(function (a, b) {
+            // reduce the values, starting with `true`
+            // and check that the next value also is something.
+            return a && isSomething(b);
+          }, true);
+        };
+        var getVal = function getVal(subscript, root) {
+          /// "Recursively" checks the subscript of the supplied root
+          /// object, or, if it's nothing, default to `this` (i.e.
+          /// the global object, if not `call`ed on the object).
+          /// @example:
+          /// var r = { a: { b: { c: { d: 0, e: [1] } } } };
+          /// var d = getVal("a.b.c.d", r); // => 0
+          /// var d = getVal("a.b.c.e", r); // => [1]
+          /// var no = getVal("a.b.c.f", r); // => undefined
+          /// --
+          /// Also works with nested arrays:
+          /// var r2 = {a: [{ b: 10 }] };
+          /// var ten = getVal("a.0.b", r2); // => 10
+          var props;
+          if (typeof subscript !== "string" ||
+              subscript.length < 1) {
+            return false;
+          }
+
+          // alternatively use:
+          // .split(/[\.|\[\]]/).filter(function (a) {
+          //     return !!a;
+          // });
+          // to allow subscript to contain []-indexing.
+          props = subscript.split(".");
+          root = root || this;
+
+          // start with the value of the property with the name that is
+          // the first of the ones passed in in the subscript string.
+          // Then, if that object is something, continue with the value
+          // of the property of that object with the corresponding next
+          // property name.
+          return (props || []).slice(1).reduce(function (out, p) {
+            return isSomething(out) ? out[p] : out;
+          }, root[props[0]]);
+        };
+        var isDefined = function (subscript, root) {
+          /// Checks whether the subscript of the supplied root object is defined.
+          /// @example:
+          /// var r = { a: { b: { c: { d: 0 } } } };
+          /// var d = isDefined("a.b.c.d", r); // => true
+          /// var no = isDefined("a.b.c.e", r); // => false
+          /// --
+          /// Also works with nested arrays:
+          /// var r2 = {a: [{ b: 10 }] };
+          /// var ten = isDefined("a.0.b", r2); // => true
+          /// var ten = isDefined("a.0.c", r2); // => false
+          return isSomething(getVal(subscript, root));
+        };
+
+        return {
+          isNothing: isNothing,
+          isSomething: isSomething,
+          areSomething: areSomething,
+          getVal: getVal,
+          isDefined: isDefined
+        };
+      }
+  ]);
+
 })();

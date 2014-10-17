@@ -148,16 +148,12 @@ body {
   left: 38%;
 }
 
+
 /*HERO-DETAIL-VIEW*/
-.hero-intro {
-  text-align: center;
-}
 
-.inset-shadow {
-  box-shadow: 0 0 31px 7px #000 inset;
-}
-
+/*Box-header and box-body styling*/
 .box-header {
+  margin-top: 50px;
   padding: 20px;
   border-radius: 9px 9px 0 0;
   background: #4f4f4f; /* Old browsers */
@@ -176,25 +172,32 @@ body {
     text-shadow: 0 0 30px salmon;
   }
 
-.overview {
+.box-body {
+  border: solid 5px black;
   border-radius: 0 0 9px 9px;
   background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUlUmjY_cOquq8MvkgOAViKSQGofTimxOFYjACMy-A3HDmUyff);
 }
+
+.inset-shadow {
+  box-shadow: 0 0 31px 7px #000 inset;
+}
+
 .apad {
   padding: 25px;
 }
-.transparent{
+
+.transparent {
   overflow: auto;
-  background:rgba(5,5,5,0.8);
+  background: rgba(5,5,5,0.8);
 }
 
-.overview-bio {
-  border: 5px solid #110D0E;
-  border-radius: 5px;
-  padding: 25px;
+.hero-intro {
+  text-align: center;
 }
 
-.overview-abilities {
+
+/*Overview content styling*/
+.overview {
 }
 
 .overview-abilities-row {
@@ -204,14 +207,13 @@ body {
 }
 
 .overview-abilities-img {
-  border: solid 2px black;
-  box-shadow: 0px 0px 4px 4px #0e0e0e;
-  padding: 0px;
 }
 
-.overview-abilities-img img {
-  width: 100%;
-}
+  .overview-abilities-img img {
+    border: solid 3px black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 5px black;
+  }
 
 .overview-abilities-description h2 {
   font-family: KoreanFont,georgia,serif;
@@ -227,4 +229,131 @@ body {
   padding: 0;
   font-size: 12px;
   line-height: 21px;
+}
+
+.hero-overview-picture img {
+  border: solid 3px black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 5px black;
+  margin-bottom: 25px;
+}
+
+.primary-stats table {
+  margin-left: 15px;
+  width: 130px;
+  padding: 0px;
+}
+
+.tablerow {
+  height: 50px;
+}
+
+.table-col-pic {
+  width: 45px;
+  height: 33px;
+}
+
+.table-col-value {
+  height: 33px;
+  width: 100px;
+}
+
+.primary-stats table tr td img {
+  height: 33px;
+  width: 33px;
+}
+
+/*Bio content styling*/
+.bio {
+}
+
+/*Tooltip styling*/
+.tooltip {
+  max-width: 500px;
+  width: auto;
+  height: auto;
+}
+
+.tooltip-inner {
+  background-color: black;
+  max-width: 500px;
+  width: auto;
+  height: auto;
+  font-size: 1.5em;
+  border: solid 5px #5b1919;
+  text-align: left;
+}
+
+.tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: -20px;
+  margin-top: -25px;
+  border-width: 20px 25px 20px 0;
+  border-right-color: #5b1919;
+}
+
+.tooltip.in {
+  filter: alpha(opacity=90);
+  opacity: 1;
+}
+
+.tooltip-inner .border {
+  border: solid 1px gray;
+}
+
+.tooltip-inner .ability-name {
+  color: white;
+}
+
+.desc {
+  color: #c6c6c6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.notes {
+  color: #6fe771;
+  padding-bottom: 10px;
+}
+
+.tooltip-view {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.ability-name {
+  padding-bottom: 10px;
+}
+
+.ability-value {
+  padding-top: 10px;
+}
+
+.dmg-type-value {
+  padding-bottom: 10px;
+}
+
+.ability-cooldown {
+  padding-top: 5px;
+}
+
+.ability-cooldown img {
+  padding-right: 10px;
+}
+
+.ability-manacost {
+  padding-top: 5px;
+}
+
+.ability-manacost img {
+  padding-right: 10px;
+}
+
+.lore {
+  color: #a8a8a8;
+  padding-top: 15px;
+  font-size: 0.7em;
+  padding-left: 20px;
+  padding-right: 20px;
 }

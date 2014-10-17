@@ -5,7 +5,8 @@
 
   var dotaApp = angular.module('dotaApp', [
     'ngRoute',
-    'dotaControllers'
+    'dotaControllers',
+    'ui.bootstrap'
   ]);
 
   dotaApp.config(['$routeProvider',
@@ -16,7 +17,6 @@
         }).
         when('/matches', {
           templateUrl: 'views/matches.html',
-          controller: 'matchesCtrl'
         }).
         when('/main', {
           templateUrl: 'views/main.html',

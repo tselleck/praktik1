@@ -1,71 +1,98 @@
 ﻿<div class="heroesView row" ng-controller="HeroDetailCtrl as heroDetailCtrl">
-  <div class="hero-intro">
-    <h1>{{ heroDetailCtrl.hero.localized_name }}</h1>
-    <img ng-src="{{heroDetailCtrl.hero.image}}" ng-if="heroDetailCtrl.hero.image" width="256" height="144" />
-    <h4>{{ heroDetailCtrl.hero.atk_l }}</h4>
+  <div class="row">
+    <div class="hero-intro">
+      <h1>{{ heroDetailCtrl.hero.localized_name }}</h1>
+      <img ng-src="{{heroDetailCtrl.hero.image}}" ng-if="heroDetailCtrl.hero.image" width="256" height="144" />
+      <h4>{{ heroDetailCtrl.hero.atk_l }}</h4>
+    </div>
   </div>
-  <div class="row box-header inset-shadow">
-    <h4 class="text-center">OVERVIEW:</h4>
-  </div>
-  <div class="overview row inset-shadow">
-    <div class="transparent apad">
-
-      <div class="hero-overview col-md-4">
-        <div class="hero-overview-picture">
-          <img ng-src="http://cdn.dota2.com/apps/dota2/images/heroes/{{heroDetailCtrl.hero.name}}_vert.jpg" />
-        </div>
-        <div class="primary-stats">
-          <div class="row col-md-6">
-            <div class="primary-stat-int">
-              <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_int.png" />
-              {{heroDetailCtrl.hero.attribute.Int}}
-            </div>
-            <div class="primary-stat-agi">
-              <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_agi.png" />
-              {{heroDetailCtrl.hero.attribute.Agi}}
-            </div>
-            <div class="primary-stat-str">
-              <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_str.png" />
-              {{heroDetailCtrl.hero.attribute.Str}}
-            </div>
+  <div class="row">
+    <div class="row box-header inset-shadow">
+      <h4 class="text-center">OVERVIEW</h4>
+    </div>
+    <div class="overview box-body inset-shadow row">
+      <div class="transparent apad">
+        <div class="hero-overview col-md-4">
+          <div class="hero-overview-picture">
+            <img ng-src="http://cdn.dota2.com/apps/dota2/images/heroes/{{heroDetailCtrl.hero.name}}_vert.jpg" ng-if="heroDetailCtrl.hero.name" />
           </div>
-          <div class="row col-md-6">
-            <div class="primary-stat-attack">
-              <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_attack.png" />
-              {{heroDetailCtrl.hero.attribute.Attack}}
-            </div>
-            <div class="primary-stat-speed">
-              <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_speed.png" />
-              {{heroDetailCtrl.hero.attribute.Speed}}
-            </div>
-            <div class="primary-stat-defense">
-              <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_defense.png" />
-              {{heroDetailCtrl.hero.attribute.Defense}}
-            </div>
+          <div class="primary-stats row">
+            <table class="col-md-6">
+              <tr class="tablerow">
+                <td class="table-col-pic">
+                  <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_int.png" />
+                </td>
+                <td class="table-col-value">{{heroDetailCtrl.hero.attribute.Int}}
+                </td>
+              </tr>
+              <tr class="tablerow">
+                <td class="table-col-pic">
+                  <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_agi.png" />
+                </td>
+                <td class="table-col-value">{{heroDetailCtrl.hero.attribute.Agi}}
+                </td>
+              </tr>
+              <tr class="tablerow">
+                <td class="table-col-pic">
+                  <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_str.png" />
+                </td>
+                <td class="table-col-value">{{heroDetailCtrl.hero.attribute.Str}}
+                </td>
+              </tr>
+            </table>
+            <table class="col-md-6">
+              <tr class="tablerow">
+                <td class="table-col-pic">
+                  <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_attack.png" />
+                </td>
+                <td class="table-col-value">{{heroDetailCtrl.hero.attribute.Attack}}
+                </td>
+              </tr>
+              <tr class="tablerow">
+                <td class="table-col-pic">
+                  <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_speed.png" />
+                </td>
+                <td class="table-col-value">{{heroDetailCtrl.hero.attribute.Speed}}
+                </td>
+              </tr>
+              <tr class="tablerow">
+                <td class="table-col-pic">
+                  <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_defense.png" />
+                </td>
+                <td class="table-col-value">{{heroDetailCtrl.hero.attribute.Defense}}
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
-      </div>
-      <div class="col-md-8">
-
-        <div class="overview-abilities" ng-repeat="ability in heroDetailCtrl.hero.abilities">
-          <div class="overview-abilities-row row">
-            <div class="overview-abilities-img col-md-2">
-              <img ng-src="{{heroDetailCtrl.getFormatedImageUrl(heroDetailCtrl.hero, ability)}}" />
-            </div>
-            <div class="overview-abilities-description col-md-10">
-              <h2><b>{{ ability.dname }}</b></h2>
-              <p>{{ ability.desc }}</p>
+        <div class="col-md-8">
+          <div class="overview-abilities" ng-repeat="ability in heroDetailCtrl.hero.abilities">
+            <div class="overview-abilities-row row">
+              <div class="overview-abilities-img col-md-2">
+                <img class="red-tooltip"
+                  tooltip-append-to-body="true" 
+                  tooltip-placement="right" 
+                  tooltip-html-unsafe="{{heroDetailCtrl.getTooltipContent(ability)}}" 
+                  ng-src="{{heroDetailCtrl.getFormatedImageUrl(heroDetailCtrl.hero, ability)}}" />
+              </div>
+              <div class="overview-abilities-description col-md-10">
+                <h2><b>{{ ability.dname }}</b></h2>
+                <p>{{ ability.desc }}</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </div>
-  <div>
-    <h4>BIO:</h4>
-    <div class="overview-bio row">
-      {{ heroDetailCtrl.hero.bio }}
+  <div class="row">
+    <div class="row box-header inset-shadow">
+      <h4 class="text-center">BIO</h4>
+    </div>
+    <div class="bio box-body inset-shadow row">
+      <div class="transparent apad">
+        {{ heroDetailCtrl.hero.bio }}
+      </div>
     </div>
   </div>
   <div>

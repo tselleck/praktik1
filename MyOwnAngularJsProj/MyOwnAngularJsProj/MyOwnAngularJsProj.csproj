@@ -62,7 +62,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="css\dotaStyle.css" />
-    <Content Include="data\heroes_details.json" />
+    <None Include=".bin\node.cmd" />
+    <None Include="data\heroes.json" />
     <None Include="data\items.json" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="img\dota2_logo.png" />
@@ -93,6 +94,10 @@
     <Content Include="scripts\angular-scenario.js" />
     <Content Include="scripts\angular-touch.js" />
     <Content Include="scripts\angular-touch.min.js" />
+    <Content Include="scripts\angular-ui\ui-bootstrap-tpls.js" />
+    <Content Include="scripts\angular-ui\ui-bootstrap-tpls.min.js" />
+    <Content Include="scripts\angular-ui\ui-bootstrap.js" />
+    <Content Include="scripts\angular-ui\ui-bootstrap.min.js" />
     <Content Include="scripts\angular.js" />
     <Content Include="scripts\angular.min.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -110,7 +115,6 @@
     <Content Include="scripts\angular-loader.min.js.map" />
     <Content Include="scripts\angular-cookies.min.js.map" />
     <Content Include="scripts\angular-animate.min.js.map" />
-    <Content Include="data\heroes.json" />
     <Content Include="data\items_detail.json" />
     <None Include="scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="scripts\i18n\angular-locale_aa-dj.js" />
@@ -843,6 +847,8 @@
     <Content Include="scripts\i18n\angular-locale_zu.js" />
     <Content Include="scripts\jquery-2.1.1.js" />
     <Content Include="scripts\jquery-2.1.1.min.js" />
+    <Content Include="scripts\lodash.js" />
+    <Content Include="scripts\lodash.min.js" />
     <Content Include="views\heroDetail.html" />
     <Content Include="views\heroes.html" />
     <Content Include="views\items.html" />

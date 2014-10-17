@@ -8,6 +8,8 @@
     </h4>
     <h4 ng-if="!heroesCtrl.previewHero">Combat style
       <h5 ng-if="!heroesCtrl.previewHero">- Roles</h5>
+      
+      <input type="text" ng-model="search"/>
     </h4>
   </div>
 
@@ -19,7 +21,7 @@
             <img src="img/main_attribute_logo/strength_logo.png" />
             STRENGTH:</h3>
         </div>
-        <div class="single-hero" ng-repeat="(name, hero) in heroesCtrl.strengthHeroes">
+        <div class="single-hero" ng-repeat="(name, hero) in heroesCtrl.strengthHeroes | filter:{id: search}">
           <img ng-src="{{ hero.image }}" ng-click="heroesCtrl.goToHeroDetail(hero)" ng-mouseover="heroesCtrl.showPreview(hero)" />
         </div>
       </div>
@@ -32,7 +34,7 @@
             <img src="img/main_attribute_logo/agility_logo.png" />
             AGILITY:</h3>
         </div>
-        <div class="single-hero" ng-repeat="(name, hero) in heroesCtrl.agilityHeroes">
+        <div class="single-hero" ng-repeat="(name, hero) in heroesCtrl.agilityHeroes | filter:{id: search}">
           <img ng-src="{{ hero.image }}" ng-click="heroesCtrl.goToHeroDetail(hero)" ng-mouseover="heroesCtrl.showPreview(hero)" />
         </div>
       </div>
@@ -45,7 +47,7 @@
             <img src="img/main_attribute_logo/intelligence_logo.png" />
             INTELLIGENCE:</h3>
         </div>
-        <div class="single-hero" ng-repeat="(name, hero) in heroesCtrl.intelligenceHeroes">
+        <div class="single-hero" ng-repeat="(name, hero) in heroesCtrl.intelligenceHeroes | filter:{id: search}">
           <img ng-src="{{ hero.image }}" ng-click="heroesCtrl.goToHeroDetail(hero)" ng-mouseover="heroesCtrl.showPreview(hero)" />
         </div>
       </div>

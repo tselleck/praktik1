@@ -587,7 +587,7 @@
           }
         },
         "desc": "Bloodseeker baptizes an area in sacred blood. After 3 seconds the ritual completes, causing any enemies caught in the area to take damage and become silenced.",
-        "notes": "",
+        "notes": "Total time is a 2.6 second delay plus a 0.4 second cast time.",
         "dmg": "",
         "attrib": {
           "RITUAL AREA": {
